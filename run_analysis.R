@@ -1,3 +1,4 @@
+
 #####################################################################################################
 ## This R script reshapes and manipulates the data collected from the accelerometers 
 ## from the Samsung Galaxy S smartphone during the following experiment:
@@ -62,11 +63,9 @@ train.y <- read.table("./UCI HAR Dataset/train/y_train.txt")  # activities
 train.subjects <- read.table("./UCI HAR Dataset/train/subject_train.txt")  # subjects
 
 message("(3/4) Loading test data...")
-filename <- "./UCI HAR Dataset/test/X_test.txt"
-
 # extract <test> data on the mean and the standard deviation 
 # (test and training data have exactly the same structure)
-test.x <- read.table(filename, colClasses=classes)  # measurements
+test.x <- read.table("./UCI HAR Dataset/test/X_test.txt", colClasses=classes)  # measurements
 test.y <- read.table("./UCI HAR Dataset/test/y_test.txt")  # activities
 test.subjects <- read.table("./UCI HAR Dataset/test/subject_test.txt")  # subjects
  
@@ -128,7 +127,6 @@ write.table(data.final, file=filename, row.names=FALSE)
 message(paste("Processing complete. Tidy data saved to:", filename))
 
 # viewing the saved data set 
-analysis <- read.table("./analysis.txt", header=TRUE)
+analysis <- read.table(filename, header=TRUE)
 View(analysis)
-
 
