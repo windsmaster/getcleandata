@@ -11,7 +11,7 @@ The script does the following:
 * Merges training and test data to create one data set.
 * Applies descriptive activity names to the activities in the data set.
 * Labels the data set with descriptive variable names.
-* Creates an independent tidy data set with the average of each measurement  
+* Creates an independent tidy data set (in wide form) with the average of each measurement  
       for each activity and each subject.
 * Outputs the tidy data set to a txt file in the working directory (`./analysis.txt`)
 
