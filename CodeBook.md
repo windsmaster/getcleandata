@@ -180,3 +180,8 @@ Features' variable names were refined to remove illegal symbols and make them mo
 * fBodyBodyGyroMag-std() **=>** FreqGyroscopeMagnitudeStdDev
 * fBodyBodyGyroJerkMag-std() **=>** FreqGyroscopeJerkMagnitudeStdDev
 
+## Data units
+* The acceleration signal from the smartphone accelerometer X axis is in standard gravity units 'g'. The same description applies for the Y and Z axis. 
+* The body acceleration signal is obtained by subtracting the gravity from the total acceleration. 
+* The angular velocity vector measured by the gyroscope is in radians/second. 
+* All features are normalized and bounded within [-1,1].
