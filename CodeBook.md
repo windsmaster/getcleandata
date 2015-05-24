@@ -90,8 +90,7 @@ Additional vectors obtained by averaging the signals in a signal window sample. 
 ## Output Data
 #### Output data files
   
-  * analysis.txt - a tidy data set in wide form with the averages of each feature measurement 
-for each activity and each subject from the initial data.
+  * analysis.txt - a tidy data set in wide form with the averages of each feature measurements on the mean and standard deviation for each activity and each subject from the initial data.
 
 #### Output data variables
   
