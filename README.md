@@ -24,7 +24,7 @@ Further details on the data are provided in [CodeBook.md](CodeBook.md)
 
 ## Special Remarks
 In the raw data set, there are several variables with the "mean" word in their name, such as `meanFreq` or angle data (`gravityMean`, `tBodyAccMean`, `tBodyAccJerkMean`, `tBodyGyroMean`, `tBodyGyroJerkMean`).
-I do not include these variables when extracting "the mean and the standard deviation", because meanFreq seems to represent weighted averages and the angle variables seem to use the mean variables as parameters and are themselves not mean or standard deviation variables. Moreover, there are no corresponding standard deviation measurements for these.
+I do not include these variables when extracting "the mean and the standard deviation", because meanFreq seems to represent weighted averages, and the angle variables seem to use the mean variables as parameters and are themselves not mean or standard deviation variables. Moreover, there are no corresponding standard deviation measurements for these.
 
 So for my analysis I only extract features that have the following codes in their names:
 * mean(): Mean value
